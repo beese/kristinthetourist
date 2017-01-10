@@ -1,18 +1,34 @@
 .site-header {
-  border-bottom: solid 1px #d7d7d7;
+  background: $blue;
+  color: white;
 }
 
 .site-name {
-  margin: 0 0 0 .7rem;
+  float: left;
+  font-size: 28px;
+  border: 6px solid $blue;
+  margin: 0;
+  border-width: 6px 0;
   color: $dark-gray;
   cursor: pointer;
   line-height: 1em;
+
+  @include mobile {
+    float: none;
+    margin-bottom: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.8rem 0;
+  }
 }
 
 .site-header a {
-  color: $dark-gray;
+  color: white;
   font-weight: 300;
   background-image: none;
+  text-shadow: none;
 }
 
 .site-header .site-title {
@@ -24,13 +40,12 @@
 
 nav {
   float: right;
-  margin-top: .33rem;
+  margin-top: 0;
   font-family: $title-heading-font-family;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
     display: block;
     font-size: 16px;
   }
@@ -41,82 +56,54 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
 
-    &:hover {
-      color: $blue;
-    }
-
     @include mobile {
       margin: 0 10px;
-      color: $blue;
     }
   }
 
   ul {
     padding: 0;
+    margin: 0;
     width: 100%;
     list-style-type: none;
-    width: 20rem;
+    font-size: 0;
+
     @include mobile {
       width: 100%;
     }
   }
 
-  ul:hover > span {
-    background: $blue;
-  }
-
-  ul {
-    margin-top: 0px;
-  }
-
   ul li {
     font-weight: bold;
-    width: 33.3%;
-    float: left;
-    padding: 7px 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
     text-align: center;
-    cursor: pointer;
-  }
 
-  ul li:hover {
-    color: #d0332b;
-  }
+    display: inline-block;
+    font-size: 0;
 
-  ul li.active:nth-child(1) ~ span,
-  ul li.inactive:nth-child(1):hover ~ span {
-    left: 0%;
-  }
+    &.active {
+      a, a:hover {
+        border-bottom: 5px solid #C8C8A9;
+      }
+    }
 
-  ul li.active:nth-child(2) ~ span,
-  ul li.inactive:nth-child(2):hover ~ span {
-    left: 33.3%;
-  }
+    a {
+      font-size: 1rem;
+      border-bottom: 5px solid transparent;
+      padding: 0.8rem;
+      display: inline-block;
 
-  ul li.active:nth-child(3) ~ span,
-  ul li.inactive:nth-child(3):hover ~ span {
-    left: 66.6%;
-  }
-
-  span {
-    position: absolute;
-    bottom: -42px;
-    display: block;
-    width: 33.3%;
-    height: 5px;
-    background: $red;
-    border-radius: 15px;
-    @include mobile {
-      display: none;
+      &:hover {
+        border-bottom: 5px solid white;
+        color: white;
+      }
     }
   }
 
-  ul li, span {
-    @include transition(all .5s ease);
-    position: relative;
-  }
 }
 
-.site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {

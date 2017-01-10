@@ -3,15 +3,14 @@
   <li class="{% if url contains '/map' %}active{% else %}inactive{% endif %}">
     <a href="{{ site.baseurl }}/map">Map</a>
   </li>
-  {% if url contains '/map' %}
-  <li class="inactive">
+  <li class="{% if url contains '/map' or url contains '/subscribe' or url contains '/about' %}inactive{% else %}active{% endif %}">
     <a href="/">Blog</a>
   </li>
-  {% else %}
-  <li class="active">
-    <a href="/">Blog</a>
+  <li class="{% if url contains '/subscribe' %}active{% else %}inactive{% endif %}">
+    <a href="/subscribe">Subscribe</a>
   </li>
-  {% endif %}
-  <span></span>
+  <li class="{% if url contains '/about' %}active{% else %}inactive{% endif %}">
+    <a href="/about">About</a>
+  </li>
 </ul>
 

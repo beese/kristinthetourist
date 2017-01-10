@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Still at home
+title:      Work in Progress!
 date:       2017-01-09 12:00:00
 summary:    This is a simple summary of everything that's going on
 location:

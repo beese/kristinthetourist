@@ -20,7 +20,7 @@ keywords:
   - interesting places
   - travel tips
 baseurl:        ""
-url:            "http://kristinthetourist.com"
+url:            "http://kristinthetourist.com/"
 date_format:    "%B %-d, %Y"
 permalink: /:year/:month/:title.html
 # Localization

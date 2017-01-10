@@ -9,14 +9,17 @@
 
             <p class="post-meta">{{ post.date | date: site.date_format }}</p>
           </div>
-          {% if post.image %}
-          <img src="{{ post.image }}" data-src="{{ post.image }}"
-               alt="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"
-               title="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"/>
-          {% endif %}
-  
-          <div class="clearfix"></div>
-          <p>{{ post.summary }}</p>
+          <article class="post-content">
+            {% if post.image %}
+            <img src="{{ post.image }}" data-src="{{ post.image }}"
+                class="popout"
+                 alt="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"
+                 title="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"/>
+            {% endif %}
+    
+            <div class="clearfix"></div>
+            <p>{{ post.summary }}</p>
+          </article>
         </a>
 
       </div>
