@@ -40,7 +40,7 @@ feed:
 # Google services
 google_analytics: "UA-66879766-2"
 google_verification:
-
+host: "0.0.0.0"
 maps:
   google:
     api_key: "AIzaSyCB8XI2oKKLKWxvyeQ5i3maU-TesDC_r5w"
