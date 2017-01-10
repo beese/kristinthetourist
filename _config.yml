@@ -1,0 +1,68 @@
+# Site settings
+# source:         "src"
+title:          "Kristin The Tourist"
+email:          "kristinbeese@gmail.com"
+author:         "Kristin Beese"
+author_twitter: "https://twitter.com/kaybeezee"
+blog_twitter:   "kaybeezee"
+blog_github:    "https://github.com/beese/kristinthetourist"
+description:    "Kristin's travel blog. I write here about all the places I visit and share my experiences."
+keywords:
+  - travel blog
+  - photo blog
+  - tourist photos
+  - landscape phots
+  - travel in europe
+  - spain photos
+  - italy photos
+  - germany photos
+  - what to see in europe
+  - interesting places
+  - travel tips
+baseurl:        ""
+url:            "http://kristinthetourist.com"
+date_format:    "%B %-d, %Y"
+permalink: /blog/:year/:month/:title.html
+# Localization
+languages:
+  en: "English"
+navigation:
+  map:
+    url:
+      en: "map"
+    label:
+      en: "Map"
+  contact:
+    en: "Contact"
+feed:
+  en: "feed.xml"
+# Google analytics
+# Google services
+google_analytics: "UA-66879766-2"
+google_verification:
+
+maps:
+  google:
+    api_key: "AIzaSyCB8XI2oKKLKWxvyeQ5i3maU-TesDC_r5w"
+
+# Optional features
+animated:             true
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    false
+ajaxify_contact_form: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: ""
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+sass:
+  compressed: true
+gems:
+  - jekyll-maps
+  - jemoji

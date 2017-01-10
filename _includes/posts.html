@@ -1,0 +1,27 @@
+<div class="home">
+  <div class="measure">
+    <div class="posts">
+      {% for post in site.posts %}
+      <div class="post-header py2">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <div class="title">
+            <h3 class="h1 post-title">{{ post.title }}</h3>
+
+            <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          </div>
+          {% if post.image %}
+          <img src="{{ post.image }}" data-src="{{ post.image }}"
+               alt="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"
+               title="{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt }}{% endif %}"/>
+          {% endif %}
+  
+          <div class="clearfix"></div>
+          <p>{{ post.summary }}</p>
+        </a>
+
+      </div>
+      <hr/>
+      {% endfor %}
+    </div>
+  </div>
+</div>

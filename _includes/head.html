@@ -1,0 +1,67 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="{% if page.categories %}{{ page.categories | join: ', ' }}{% else %}{{ site.keywords | join: ', ' }}{% endif %}">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ site.feed[page.lang] | prepend:"/" | prepend: site.baseurl }}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/pixyll.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+    <link rel="stylesheet" href="/css/photoswipe.css">
+    <link rel="stylesheet" href="/css/default-skin/default-skin.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono|PT Serif Caption|Roboto" rel="stylesheet">
+    {% if site.show_social_icons or site.show_sharing_icons %}
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    {% endif %}
+
+    <!-- Verifications -->
+    {% if site.google_verification %}
+      <meta name="google-site-verification" content="{{ site.google_verification }}" />
+    {% endif %}
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="{{ page.lang }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
+    <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    {% if site.twitter_username %}
+        <meta name="twitter:site" content="@{{ site.blog_twitter }}" />
+    {% endif %}
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+
+    {% if site.google_analytics %}
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    {% endif %}
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.unveil.js"></script>
+    <script type="text/javascript" src="/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.youtube-inview-autoplay.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/js/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="/js/photoswipe-gallery.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/justify-images.js" charset="utf-8"></script>
+    <meta name="msvalidate.01" content="9806A3A2C9588765D94C98B201029C74" />
+</head>

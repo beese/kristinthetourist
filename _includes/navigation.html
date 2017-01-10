@@ -1,0 +1,17 @@
+<ul>
+  {% assign url = page.url|remove:'index.html' %}
+  <li class="{% if url contains '/map' %}active{% else %}inactive{% endif %}">
+    <a href="{{ site.baseurl }}/map">Map</a>
+  </li>
+  {% if url contains '/map' %}
+  <li class="inactive">
+    <a href="/">Blog</a>
+  </li>
+  {% else %}
+  <li class="active">
+    <a href="/">Blog</a>
+  </li>
+  {% endif %}
+  <span></span>
+</ul>
+

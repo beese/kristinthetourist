@@ -1,0 +1,17 @@
+.map {
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .map-block {
+    flex-grow: 1;
+  }
+}
+
+.map-info-window img {
+  max-width: 250px;
+  border-radius: 5px;
+}
