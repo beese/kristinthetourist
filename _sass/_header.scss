@@ -16,7 +16,7 @@
 }
 
 .site-header .site-title {
-  font-family: $heading-font-family;
+  font-family: $title-heading-font-family;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -25,7 +25,7 @@
 nav {
   float: right;
   margin-top: .33rem;
-  font-family: $heading-font-family;
+  font-family: $title-heading-font-family;
   font-size: 18px;
 
   @include mobile {

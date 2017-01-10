@@ -22,7 +22,7 @@ keywords:
 baseurl:        ""
 url:            "http://kristinthetourist.com"
 date_format:    "%B %-d, %Y"
-permalink: /blog/:year/:month/:title.html
+permalink: /:year/:month/:title.html
 # Localization
 languages:
   en: "English"
