@@ -34,8 +34,7 @@ navigation:
       en: "Map"
   contact:
     en: "Contact"
-feed:
-  en: "feed.xml"
+feed: "feed.xml"
 # Google analytics
 # Google services
 google_analytics: "UA-66879766-2"

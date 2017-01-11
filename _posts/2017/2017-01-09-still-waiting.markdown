@@ -16,11 +16,11 @@ We rented an apartment with an ocean view in a small town called Puerto de Santi
 
 As it turned out, the high season on Tenerife starts in November and accommodation prices grow almost twice!
 
-![Pretty!](https://drive.google.com/uc?id=0B4sa92p6NKUaNGNhVGtkX3laRzQ)
+![Pretty!](http://static.kristinthetourist.com/2017/2017-01%20sample/2.jpg)
 
 Rocky beach near to one of the hotels, we've snorkled here for a bit.
 
-![Pretty!](https://drive.google.com/uc?id=0B4sa92p6NKUaTVpYbmowXy1fbEU)
+![Pretty!](http://static.kristinthetourist.com/2017/2017-01%20sample/3.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget commodo nibh. Cras et rutrum odio. Etiam auctor placerat justo, vel sollicitudin orci laoreet a. Aenean finibus nisl vel quam egestas scelerisque. Duis diam eros, porta eget risus in, scelerisque tincidunt tellus. Donec et felis tempor, sollicitudin nibh ac, auctor ligula. Mauris aliquet eleifend tortor ultrices sollicitudin. Integer ullamcorper at nibh lacinia pharetra. Vestibulum ut sodales lorem, nec sollicitudin nisl. Fusce vitae leo lacus. Praesent eleifend condimentum sapien vitae hendrerit. Etiam dapibus nisi at libero blandit pharetra id nec nibh. Ut ornare sollicitudin dui, pulvinar vulputate ligula commodo eget. Aliquam elementum tincidunt nisl, sed vestibulum purus hendrerit ut.
 

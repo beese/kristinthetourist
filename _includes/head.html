@@ -6,7 +6,7 @@
     <meta name="description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
     <meta name="keywords" content="{% if page.categories %}{{ page.categories | join: ', ' }}{% else %}{{ site.keywords | join: ', ' }}{% endif %}">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ site.feed[page.lang] | prepend:"/" | prepend: site.baseurl }}" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ site.feed | prepend:"/" | prepend: site.baseurl }}" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/pixyll.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="/css/photoswipe.css">
@@ -14,7 +14,7 @@
 
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono|PT Serif Caption|Roboto" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Glass+Antiqua|Life+Savers|Raleway|Ribeye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Glass+Antiqua" rel="stylesheet">
     {% if site.show_social_icons or site.show_sharing_icons %}
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
