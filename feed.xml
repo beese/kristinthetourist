@@ -1,6 +1,5 @@
 ---
 layout: null
 ref: feed
-lang: en
 ---
 {% include feed_content.xml %}
