@@ -7,7 +7,7 @@ a:hover,
 a:focus,
 a:active {
   border: 0;
-  color: $blue;
+  color: darken($link-color, 18%);
   text-decoration: none;
   text-shadow: white 1px 0px 0px, white -1px 0px 0px;
 }

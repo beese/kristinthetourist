@@ -9,7 +9,8 @@ layout: main
 
 <div class="post-header post-header-single mb2">
   {% if page.image %}
-  <img src="{{ page.image }}" alt="{{ page.title }}"/>
+  <div class="cover" style="background-image: url('{{ page.image }}');" title="{{ page.title }}"></div>
+  <img src="{{ page.image }}" alt="{{ page.title }}" class="mobile-cover" />
   {% endif %}
 
   <div class="measure border">

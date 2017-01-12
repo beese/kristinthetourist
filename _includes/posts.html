@@ -1,6 +1,8 @@
 <div class="home">
   <div class="measure">
     <div class="posts">
+      <p class="lead">Hello! I’m <a href="/about">Kristin</a> and I’m a junior at Purdue University studying Computer Science. This year I’ll be spending more days out of the USA than in it, so I thought I should track my travels as I wander through Europe from January 12th–August 5th, 2017!
+      </p>
       {% for post in site.posts %}
       <div class="post-header py2">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
@@ -19,6 +21,9 @@
     
             <div class="clearfix"></div>
             <p>{{ post.summary }}</p>
+            <p>
+              <em><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading &raquo;</a></em>
+            </p>
           </article>
         </a>
 
