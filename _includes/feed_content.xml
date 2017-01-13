@@ -15,7 +15,6 @@
         <description>
           &lt;p&gt;&lt;img src=&quot;{{ post.image | xml_escape }}&quot; alt=&quot;{{ post.title | xml_escape }}&quot; /&gt;&lt;/p&gt;
           {{ post.content | replace: 'jekyllMaps', '' | replace: 'width:100%;height:400px;', 'width:0;height:0;' | xml_escape }}</description>
-          }
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>http://kristinthetourist.com{{ post.url }}</link>
         <guid isPermaLink="true">http://kristinthetourist.com{{ post.url }}</guid>
