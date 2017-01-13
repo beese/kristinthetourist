@@ -3,6 +3,7 @@
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>    
+    <pubDate>{{ site.posts | sort: 'date' | map: 'date' | last | date_to_rfc822 }}</pubDate>
     <link>http://kristinthetourist.com</link>
     <atom:link href="http://kristinthetourist.com/{{ page.path }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
