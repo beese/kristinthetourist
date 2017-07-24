@@ -9,7 +9,6 @@ COPY Gemfile.lock /src
 
 RUN bundle install
 
-# port 4000
 COPY . /src
 
-CMD ["serve"]
+CMD ["serve", "--port", "5000"]
