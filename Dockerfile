@@ -11,4 +11,6 @@ RUN bundle install
 
 COPY . /src
 
+EXPOSE 5000
+
 CMD ["serve", "--port", "5000"]
